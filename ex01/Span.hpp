@@ -6,7 +6,7 @@
 /*   By: sichoi <sichoi@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/31 17:36:39 by sichoi            #+#    #+#             */
-/*   Updated: 2022/07/31 18:51:45 by sichoi           ###   ########.fr       */
+/*   Updated: 2022/07/31 20:55:27 by sichoi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 # include <stdexcept>
 # include <algorithm>
 # include <set>
+# include <deque>
 
 class Span
 {
