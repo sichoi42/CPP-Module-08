@@ -6,7 +6,7 @@
 /*   By: sichoi <sichoi@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/31 16:13:55 by sichoi            #+#    #+#             */
-/*   Updated: 2022/07/31 20:55:57 by sichoi           ###   ########.fr       */
+/*   Updated: 2022/08/02 15:40:56 by sichoi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,17 +63,16 @@ int	main(void)
 	std::cout << "==================" << std::endl;
 
 	{
-		Span sp = Span(10001);
-		std::deque<int> d(10000);
+		Span sp = Span(10000);
+		std::deque<int> dq;
 		for (int i = 0; i < 10000; ++i)
 		{
-			if (i % 2 == 1)
-				d.push_back(i);
+			if (i % 2 == 0)
+				dq.push_front(i);
 			else
-				d.push_front(i);
+				dq.push_back(i);
 		}
-		std::cout << d.size() << std::endl;
-		sp.addNumber(d.begin(), d.end());
+		sp.addNumber(dq.begin(), dq.end());
 		std::cout << "size: " << sp.getVector().size() << std::endl;
 		std::cout << "capacity: " << sp.getVector().capacity() << std::endl;
 		std::cout << "shortest span: " << sp.shortestSpan() << std::endl;

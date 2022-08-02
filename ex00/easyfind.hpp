@@ -6,7 +6,7 @@
 /*   By: sichoi <sichoi@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 23:46:28 by sichoi            #+#    #+#             */
-/*   Updated: 2022/07/31 00:46:44 by sichoi           ###   ########.fr       */
+/*   Updated: 2022/07/31 18:41:12 by sichoi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # define RED "\033[0;31m"
 # define RESET "\033[0m"
 
-# include <algorithm>
 # include <iterator>
 # include <stdexcept>
 # include <iostream>
