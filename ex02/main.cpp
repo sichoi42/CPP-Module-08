@@ -6,7 +6,7 @@
 /*   By: sichoi <sichoi@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/31 20:19:04 by sichoi            #+#    #+#             */
-/*   Updated: 2022/08/02 17:01:39 by sichoi           ###   ########.fr       */
+/*   Updated: 2022/08/03 13:19:45 by sichoi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,11 @@ int	main(void)
 		++it;
 	}
 	std::stack<int> s(mstack);
+
+	std::cout << GREEN << "test reverse_iterator" << RESET << std::endl;
+	MutantStack<int> mstack2;
+	mstack2 = mstack;
+	for (MutantStack<int>::reverse_iterator it = mstack2.rbegin(); it != mstack2.rend(); ++it)
+		std::cout << *it << std::endl;
 	return (0);
 }
